@@ -1,0 +1,19 @@
+npx create-react-app frontend
+npm install react-scripts@latest
+cd frontend
+npm install --save-dev typescript @types/node @types/react @types/react-dom @types/jest
+
+npx tsc --init
+
+after init in the tsconfig.json file i had added in the 
+compailerOptions{
+'jsx':"react"
+}
+
+and also add exclude outside the compailerOption
+
+  "exclude": [
+    "node_modules",
+    "build",
+    "App.test.tsx" // Add this line to exclude App.test.ts
+  ]
