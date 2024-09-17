@@ -17,3 +17,9 @@ and also add exclude outside the compailerOption
     "build",
     "App.test.tsx" // Add this line to exclude App.test.ts
   ]
+
+  # to start reducx in typescript
+
+  npm install @reduxjs/toolkit --legacy-peer-deps
+
+  npm i react-redux --legacy-peer-deps

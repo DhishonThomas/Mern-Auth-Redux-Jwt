@@ -3,7 +3,7 @@ import mongoose,{ConnectOptions} from 'mongoose'
 import bodyParser from 'body-parser'
 import cors from 'cors'
 import userRoutes from '../src/routes/userRoutes'
-
+import adminRoutes from '../src/routes/adminRoutes'
 import dotenv from 'dotenv'
 dotenv.config()
 
@@ -13,6 +13,7 @@ app.use(bodyParser.json())
 app.use(cors())   
 
 app.use("/api",userRoutes)
+app.use("/api/admin",adminRoutes)
 
 
 mongoose.connect('mongodb://localhost:27017/mern-jwt-auth', {
@@ -20,8 +21,6 @@ mongoose.connect('mongodb://localhost:27017/mern-jwt-auth', {
 }).then(() => {
     console.log('MongoDB connected');
 }).catch(err => console.log(err));
-
-
 
 
 const PORT = process.env.PORT || 5001;

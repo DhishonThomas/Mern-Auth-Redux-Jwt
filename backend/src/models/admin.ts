@@ -1,18 +1,11 @@
 import mongoose from "mongoose";
 import bcrypt from "bcryptjs";
 
-const userSchema = new mongoose.Schema({
-  username: { type: String,
-     required: true,
-      unique: true },
-
+const adminSchema = new mongoose.Schema({
       email:{
         type:String,
         required:true,
         unique:true
-      },
-      imageUrl:{
-        type:String,
       },
       password: { type: String, 
         required: true }
@@ -22,7 +15,7 @@ const userSchema = new mongoose.Schema({
 
 //😃 if use arrow function you can't access to the this value ...
 
-userSchema.pre('save',async function(next){
+adminSchema.pre('save',async function(next){
 
     if(!this.isModified('password')){
         return next()
@@ -34,4 +27,4 @@ this.password=await bcrypt.hash(this.password,salt)
 next();
 } )
 
-export const User= mongoose.model('User',userSchema)
+export const Admin= mongoose.model('Admin',adminSchema)

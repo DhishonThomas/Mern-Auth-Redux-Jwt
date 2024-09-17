@@ -1,6 +1,7 @@
 import express from 'express'
-import {login, register, routePotecter,op} from '../controllers/userControllers'
+import {login, register, routePotecter,op,updateProfile} from '../controllers/userControllers'
 import { auth } from '../middleware/auth'
+
 const router=express.Router()
 
 router.get("/op",op)
@@ -11,4 +12,6 @@ router.post("/login",login)
 
 router.get("/me",auth,routePotecter)
 
-export default router
+router.post("/updateProfile", updateProfile)
+
+export default router 

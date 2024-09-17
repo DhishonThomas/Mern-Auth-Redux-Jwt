@@ -2,6 +2,10 @@ import React, { useRef, useState } from "react";
 import { checkvalidateData } from "../utils/validate";
 import axios from "axios";
 import { API_URL,LOGIN_URL,REGISTER_URL } from "../utils/constans";
+import { UseDispatch, useDispatch } from "react-redux";
+import { addUser } from "../utils/userSlice";
+import { useNavigate } from "react-router-dom";
+import Swal from "sweetalert2";
 
 const Login = () => {
   const [isSignInForm, setIsSignInForm] = useState(true);
@@ -11,6 +15,8 @@ const Login = () => {
   const emailRef = useRef<HTMLInputElement>(null);
   const passwordRef = useRef<HTMLInputElement>(null);
 
+  const dispatch=useDispatch()
+  const navigate=useNavigate()
   const handleButtonClick =async () => {
 
 const email=emailRef.current?.value||''
@@ -18,6 +24,8 @@ const password=passwordRef.current?.value||''
 const userName=userNameRef.current?.value||null
 
 const errMesage=checkvalidateData(email,password,userName)
+console.log(errMesage);
+
 setErrMessage(errMesage)
 
 if(errMesage)return
@@ -25,10 +33,51 @@ if(errMesage)return
 if(!isSignInForm){
 
 
-const register=await axios.post("http://localhost:5000/api/register",{username:userName,email,password})
-  console.log("register,",register)
+const register=await axios.post(API_URL+REGISTER_URL,{username:userName,email,password})
+  console.log("register,",register.data.message)
+  //handele the errp-r
+if(register.data.existingUser){
+  return setErrMessage(register.data.message)
 }
-  };
+Swal.fire({
+  title: "Registered Successfully",
+  icon: "success",
+  timer: 3000,
+  showConfirmButton: false,
+}).then(()=>{
+  setIsSignInForm(true)
+})
+
+}else{ 
+  
+  const login=await axios.post(API_URL+LOGIN_URL,{email,password})
+console.log(login.data.message);
+
+if(login.data.error)return setErrMessage(login.data.message) 
+
+  console.log("loginvfsdsd",login)
+
+if(login.data.token){
+  const token=login.data.token
+
+  localStorage.setItem('token',token)
+  
+  const tokenResponse=await axios.get(API_URL+"/me",{
+    headers: {
+      'Authorization': `Bearer ${token}`  
+    }
+  })
+    console.log("tokenResponse",  )
+  
+    dispatch(addUser(tokenResponse.data))
+  
+    navigate("/home")
+}
+
+
+}
+
+  }
 
   const toggleSignInForm = () => {
     setIsSignInForm(!isSignInForm);
