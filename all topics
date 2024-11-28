@@ -1,0 +1,318 @@
+Based on the provided topics and the instruction to filter the mostly asked questions while also providing a comprehensive list, here is a categorized list along with the most frequently asked questions highlighted. 
+
+### JavaScript
+
+**Frequently Asked:**
+- Currying vs Partial Application
+- Weak Ref
+- Deep Copying vs Shallow Copy
+- Promise.race vs Promise.any
+- Memory allocation of undefined
+- Convert words to title case in a sentence
+- Generator function: multiples of given number endlessly
+- Remove property from object
+- Loop an object
+- Iterable vs Enumerable
+- .reduce(): count occurrences of value
+- Follow JS coding conventions
+- Prototype Pollution
+- Event Loop
+- Null vs Undefined
+- Event Propagation and Delegation
+- Arrow Function vs Regular Function
+- Call, Apply, Bind
+- Closure
+
+**Full List:**
+- Currying vs Partial Application
+- Weak Ref
+- Deep Copying
+- Promise.race vs Promise.any
+- Memory Allocation of Undefined 
+- Convert Words to Title Case in a Sentence
+- Generator: Multiples of Given Number Endlessly 
+- Remove Property from Object
+- Loop an Object
+- Iterable vs Enumerable
+- .reduce(): Count Occurrences of Value
+- Follow JS Coding Conventions
+- Prototype Pollution
+- Event Loop
+- Null vs Undefined
+- Event Propagation and Delegation
+- Arrow Function vs Regular Function
+- Call, Apply, Bind
+- Closure
+- WebAPIs
+- Local Storage vs Session Storage
+- Event Bubbling
+- Object.seal
+- ClearInterval
+- Polyfills
+- Set vs Map
+- Default Parameters
+- Template Literals
+- REPL
+- Streams in Node.js
+- fs.stat()
+- util.promisify
+- Res.write vs Res.send
+- Prototypal Inheritance
+- Destructuring
+- Object.keys, Object.values
+- Proxy Object
+- Shallow Freeze vs Deep Freeze
+- Throttling
+- Debouncing
+
+### MongoDB
+
+**Frequently Asked:**
+- Journaling
+- WiredTiger
+- GridFS
+- TTL Index
+- Replica Set
+- Delete documents that don’t have "special_feature" field
+- Display Unique Colors (color is array)
+- Indexing
+- Aggregation
+- Covered Query
+
+**Full List:**
+- Journaling 
+- WiredTiger
+- GridFS
+- TTL Index
+- Replica Set
+- Delete Documents that Don’t Have "special_feature" Field
+- Display Unique Colors (Color is Array)
+- Priciest Vitamin C Fruit
+- Indexing
+- Aggregation
+- $unwind, $sum
+- $mul: Increment Price of All Fruits by 20%
+- Capped Collection
+- Bulk Write
+- Batch Sizing
+- Sharding
+- Replication
+- Manual Election
+- Views
+- Covered Query
+- Clustered Collection
+- Collection
+- CRUD Operations
+- Lookup
+- Logical Operator
+- Comparison Operator
+- BSON
+- Update Operators ($set, $unset, $inc)
+- Distinct
+- Count
+- Insert vs Save
+- Aggregation Pipeline
+- Replica Set
+- Different Types of Indexing
+
+### Backend
+
+**Frequently Asked:**
+- Socket
+- PM2 Purpose
+- Worker Threads
+- Child Process
+- CommonJS
+- User-Agent
+- CSRF
+- App.engine
+- Browser Cache
+- Path/Route Params
+- DNS
+- Rate Limiting
+- Process and Thread
+- Cluster
+- Error Handling Middleware
+- Dynamic Routing
+
+**Full List:**
+- Socket
+- PM2 Purpose
+- Worker Threads
+- Child Process
+- CommonJS
+- User-Agent
+- CSRF
+- App.engine
+- Browser Cache
+- Path/Route Params
+- DNS
+- Rate Limiting
+- Process and Thread
+- Cluster
+- Error Handling Middleware
+- Dynamic Routing
+- App.use
+- App.set
+- HTTP Status Codes
+- Parts of HTTP Request and Response
+- CORS
+- REST API
+- Upsert Query
+- Aggregation
+- Error Handling Middleware
+- Router Chaining
+- Middlewares
+- Streams
+- fs.stat()
+- Util.promisify
+- Res.write vs Res.send
+
+### React
+
+**Frequently Asked:**
+- Transpiler
+- Reconciliation
+- className vs Class in JSX
+- Synthetic Events
+- Polyfills
+- Passing Data from Child to Parent
+- Storing Value in State vs Variable
+- useRef vs useState
+- useParams
+- Run a Function when Component Unmounts
+- React Fiber
+- Error Boundary
+- Custom Hooks
+- Hook Rules
+
+**Full List:**
+- Transpiler
+- Reconciliation
+- className vs Class in JSX
+- Synthetic Events
+- Polyfills
+- Passing Data from Child to Parent
+- Storing Value in State vs Variable
+- useRef vs useState
+- useParams
+- Run a Function when Component Unmounts
+- React Fiber
+- Error Boundary
+- Custom Hooks
+- Hook Rules
+- useMemo vs useCallback
+- React Profiler
+- Lifecycle Methods
+- useReducer
+- Redux
+- Stateless vs Stateful Component
+- BrowserRouter vs MemoryRouter
+- Prop Drilling
+- PropTypes
+- JSX
+- Conditional Rendering
+- Forms and Controlled Components
+- React Router
+- Lazy Loading
+
+### Data Structures and Algorithms (DSA)
+
+**Frequently Asked:**
+- Circular Reference
+- ASCII
+- Escape Sequence
+- Hash Collision Resolution Methods
+- Priority Queue: Does it Consider Priority on Enqueue
+- Complexity of Recursion
+- Complexity of Accessing Element in Array vs Singly Linked List
+- Stack Implementation
+- Jagged Array
+- Weighted Graph
+- Directed Graph Applications
+- Root Node Value in Trie
+- Flatten a Jagged/Multidimensional Array
+- Trie Implementation
+- Degree of a Node
+- MinHeap vs MaxHeap
+
+**Full List:**
+- Circular Reference
+- ASCII
+- Escape Sequence
+- Hash Collision Resolution Methods
+- Priority Queue: Does it Consider Priority on Enqueue
+- Complexity of Recursion
+- Complexity of Accessing Element in Array vs Singly Linked List
+- Stack Implementation
+- Jagged Array
+- Weighted Graph
+- Directed Graph Applications
+- Root Node Value in Trie
+- Flatten a Jagged/Multidimensional Array
+- Trie Implementation
+- Degree of a Node
+- MinHeap vs MaxHeap
+- Binary Search
+- Linear Search
+- Depth-First Search (DFS)
+- Breadth-First Search (BFS)
+- Spanning Tree
+- Minimum Spanning Tree
+- Graph Representation
+- Graph Indexing
+- AVL Tree
+- Segment Tree
+- Priority Queue
+
+### Other Topics
+
+**Frequently Asked:**
+- Currying
+- Shallow Copy vs Deep Copy
+- Arrow Function vs Regular Function
+- Prototype Pollution
+- Event Delegation
+- Throttling
+- Debouncing
+- Object.keys, Object.values
+- Object.freeze, Object.seal
+- Generator Functions
+- Dynamic Memory Allocation Pitfalls
+- Virtual Memory
+- Stack vs Heap Memory
+- Recursion: Terminating After Certain Calls
+
+**Full List:**
+- Currying
+- Shallow Copy vs Deep Copy
+- Arrow Function vs Regular Function
+- Prototype Pollution
+- Event Delegation
+- Throttling
+- Debouncing
+- Object.keys, Object.values
+- Object.freeze, Object.seal
+- Generator Functions
+- Dynamic Memory Allocation Pitfalls
+- Virtual Memory
+- Stack vs Heap Memory
+- Recursion: Terminating After Certain Calls
+- JIT Compilation
+- Theta Notation
+- LF, CRLF
+- Rehashing
+- Sparse Hashtable
+- Load Factor
+- Event Capturing
+- Proxy Object
+- Reflect
+- Metaprogramming
+- HTTP Compression
+- Webpack
+- ESModules
+- Synthetic Events
+- Uncontrolled Components
+- Static vs Dynamic Typing
+
+This list should provide a structured and prioritized guide to your study or review sessions, ensuring that you cover the most frequently asked topics while also having access to the full breadth of subjects you need to know.
